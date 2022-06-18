@@ -14,3 +14,12 @@ pico驱动风扇转向
 cv2.dnn.readNetFromCaffe("data/deploy.prototxt", "data/res10_300x300_ssd_iter_140000_fp16.caffemodel")<br>
 也可以用这个：<br>
 cv2.dnn.readNetFromTensorflow("data/opencv_face_detector_uint8.pb", "data/opencv_face_detector.pbtxt")
+
+### 舵机角度公式：
+duty_u16(占空比) = (2.5+角度*10/180)/100 * 65532
+* PWM.duty_u16(duty_u16)
+* “角度”为舵机要转动的角度
+
+### 项目参考: 
+* https://github.com/1zlab/1ZLAB_Face_Track_Robot
+* https://www.bilibili.com/read/cv14064498
