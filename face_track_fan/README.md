@@ -1,3 +1,4 @@
+## 人脸追踪小风扇
 项目采用：<br>
 树莓派pico + esp32cam + ESP-01S + opencv<br>
 将采集到的视频（esp32cam加入WiFi），通过WiFi传输到PC，交给OpenCV进行人脸识别。<br>
